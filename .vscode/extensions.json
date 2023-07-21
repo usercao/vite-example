@@ -1,7 +1,9 @@
 {
   "recommendations": [
+    "styled-components.vscode-styled-components",
     "christian-kohler.path-intellisense",
     "pkief.material-icon-theme",
+    "xiangcai.django-gettext",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "irongeek.vscode-env",

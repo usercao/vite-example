@@ -4,10 +4,10 @@ import 'virtual:uno.css';
 
 // ReactDOM.createRoot(document.getElementById('root')!).render(<React.StrictMode>{/* <App /> */}</React.StrictMode>);
 
-function run() {
+function appRun() {
   const container = window.document.getElementById('root')!;
   const root = ReactDOM.createRoot(container);
   root.render(<React.StrictMode>{/* <App /> */}</React.StrictMode>);
 }
 
-run();
+appRun();
