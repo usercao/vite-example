@@ -5,9 +5,18 @@
   "type": "module",
   "scripts": {
     "start": "vite --open",
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "build": "tsc && vite build --mode production",
+    "build:dev": "tsc && vite build --mode development",
+    "build:pre": "tsc && vite build --mode test",
+    "inspect": " --analyzer",
+    "i18n": "yarn i18n:extract && yarn i18n:compile",
+    "i18n:extract": "lingui extract --clean",
+    "i18n:compile": "lingui compile --strict",
+    "lint": "yarn eslint && yarn prettier && yarn stylelint",
+    "eslint": "eslint --cache '@(src)/**/*.@(js|jsx|ts|tsx)'",
+    "eslint:fix": "yarn eslint -- --fix",
+    "prettier": "prettier --write '@(src)/**/*.@(ts|tsx)'",
+    "stylelint": "stylelint '@(src)/**/*.@(css|scss|less)'",
     "preview": "vite preview"
   },
   "dependencies": {

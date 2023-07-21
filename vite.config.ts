@@ -1,5 +1,5 @@
 import { createLogger, defineConfig } from 'vite';
-import react from '@vitejs/plugin-react-swc'
+import react from '@vitejs/plugin-react-swc';
 import UnoCSS from 'unocss/vite';
 import { createMpaPlugin } from 'vite-plugin-virtual-mpa';
 import { fileURLToPath, URL } from 'node:url';
@@ -20,17 +20,22 @@ const customLogger = (): Logger => {
 // https://vitejs.dev/config/
 export default defineConfig({
   customLogger: customLogger(),
-  plugins: [react(),
+  plugins: [
+    react(),
     UnoCSS(),
     createMpaPlugin({
       verbose: false,
       template: 'public/index.html',
       pages: [{ name: 'index', filename: 'index.html' }],
       rewrites: [{ from: /^(?!.*charting_library).*$/i, to: '/public/index.html' }],
-    }),],
-    resolve: {
-      alias: {
-        '@': fileURLToPath(new URL('./src', import.meta.url)),
-      },
+    }),
+  ],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
-})
+  },
+  css: {
+    transformer: 'lightningcss',
+  },
+});
