@@ -1,18 +1,12 @@
-module.exports = {
-  root: true,
-  env: { browser: true, es2020: true },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react-hooks/recommended',
-  ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
-  parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh'],
+const { getESLintConfig } = require('@applint/spec');
+
+// https://www.npmjs.com/package/@applint/spec
+module.exports = getESLintConfig('react-ts', {
   rules: {
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
+    'import/no-duplicates': ['error', { considerQueryString: true }],
+    camelcase: 'off',
+    'no-console': 'off',
+    'max-lines': 'off',
+    'id-length': 'off',
   },
-}
+});
