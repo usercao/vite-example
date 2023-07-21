@@ -10,18 +10,23 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "dayjs": "^1.11.9",
+    "jotai": "^2.2.2",
+    "lodash-es": "^4.17.21",
+    "mac-scrollbar": "^0.10.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@applint/spec": "^1.2.3",
+    "@commitlint/cli": "^17.6.7",
+    "@types/lodash-es": "^4.17.8",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "eslint": "^8.45.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.3",
+    "prettier": "^3.0.0",
+    "stylelint": "^15.10.2",
     "typescript": "^5.0.2",
     "unocss": "^0.53.5",
     "vite": "^4.4.5",
