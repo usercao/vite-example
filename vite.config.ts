@@ -19,7 +19,6 @@ const customLogger = (): Logger => {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  customLogger: customLogger(),
   plugins: [
     react(),
     UnoCSS(),
@@ -35,7 +34,32 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  customLogger: customLogger(),
   css: {
     transformer: 'lightningcss',
+  },
+  server: {
+    open: true,
+    cors: false,
+    proxy: {
+      '/api': {
+        target: 'http://jsonplaceholder.typicode.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+      '/socket.io': {
+        target: 'ws://localhost:5174',
+        ws: true,
+      },
+    },
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        assetFileNames: '[ext]/[name]-[hash].[ext]',
+        chunkFileNames: 'js/[name]-[hash].js',
+        entryFileNames: 'js/[name]-[hash].js',
+      },
+    },
   },
 });

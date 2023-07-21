@@ -2,11 +2,11 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-const buttonStyle = styled.div`
-  margin: 0 auto;
-`;
+// const buttonStyle = styled.div`
+//   margin: 0 auto;
+// `;
 
 function App() {
   const [count, setCount] = useState(0);
