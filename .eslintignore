@@ -1,12 +1,7 @@
-# 忽略目录
-build/
-tests/
-demo/
-.ice/
+# Directory
+dist/
+dist-ssr/
 
-# node 覆盖率文件
-coverage/
-
-# 忽略文件
+# Files
 **/*-min.js
 **/*.min.js

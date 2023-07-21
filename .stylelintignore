@@ -1,7 +1,7 @@
-# 忽略目录
-build/
-tests/
-demo/
+# Directory
+dist/
+dist-ssr/
 
-# node 覆盖率文件
-coverage/
+# Files
+**/*-min.js
+**/*.min.js

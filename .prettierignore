@@ -1,9 +1,8 @@
-build/
-tests/
-demo/
-.ice/
-coverage/
+# Directory
+dist/
+dist-ssr/
+
+# Files
 **/*-min.js
 **/*.min.js
-package-lock.json
 yarn.lock
