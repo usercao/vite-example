@@ -18,6 +18,12 @@
     "stylelint": "stylelint '@(src)/**/*.@(css|scss|less)'",
     "preview": "vite preview"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "dependencies": {
     "@tanstack/router": "^0.0.1-beta.108",
     "dayjs": "^1.11.9",
