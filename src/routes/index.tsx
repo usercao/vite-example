@@ -59,12 +59,19 @@ const router = new Router({ routeTree });
 // }
 
 // Render our app!
-const rootElement = document.getElementById('app')!;
-if (!rootElement.innerHTML) {
-  const root = ReactDOM.createRoot(rootElement);
-  root.render(
-    <StrictMode>
-      <RouterProvider router={router} />
-    </StrictMode>,
-  );
-}
+const rootElement = document.getElementById('root')!;
+// if (!rootElement.innerHTML) {
+//   const root = ReactDOM.createRoot(rootElement);
+//   root.render(
+//     <StrictMode>
+//       <RouterProvider router={router} />
+//     </StrictMode>,
+//   );
+// }
+
+const root = ReactDOM.createRoot(rootElement);
+root.render(
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>,
+);
