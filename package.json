@@ -25,29 +25,29 @@
     }
   },
   "dependencies": {
-    "@tanstack/router": "^0.0.1-beta.117",
-    "axios": "^1.4.0",
+    "@tanstack/router": "^0.0.1-beta.173",
+    "axios": "^1.5.0",
     "dayjs": "^1.11.9",
-    "jotai": "^2.2.2",
+    "jotai": "^2.4.0",
     "lodash-es": "^4.17.21",
     "mac-scrollbar": "^0.10.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^6.0.4"
+    "styled-components": "^6.0.7"
   },
   "devDependencies": {
     "@applint/spec": "^1.2.3",
-    "@commitlint/cli": "^17.6.7",
+    "@commitlint/cli": "^17.7.1",
     "@types/lodash-es": "^4.17.8",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react-swc": "^3.3.2",
-    "eslint": "^8.45.0",
-    "lightningcss": "^1.21.5",
-    "prettier": "^3.0.0",
-    "stylelint": "^15.10.2",
+    "eslint": "^8.48.0",
+    "lightningcss": "^1.21.7",
+    "prettier": "^3.0.3",
+    "stylelint": "^15.10.3",
     "typescript": "^5.0.2",
-    "unocss": "^0.53.5",
+    "unocss": "^0.55.3",
     "vite": "^4.4.5",
     "vite-plugin-virtual-mpa": "^1.9.1"
   }
