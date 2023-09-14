@@ -89,10 +89,11 @@
   },
   "[env]": {
     "editor.defaultFormatter": "IronGeek.vscode-env"
-  }
+  },
   // ===========================================
   // ============= Other =======================
   // ===========================================
+  "css.lint.unknownAtRules": "ignore" // @unocss
   // "stylelint.enable": true,
   // "stylelint.packageManager": "yarn",
   // "vetur.ignoreProjectWarning": true,
