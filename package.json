@@ -25,7 +25,7 @@
     }
   },
   "dependencies": {
-    "@tanstack/router": "^0.0.1-beta.173",
+    "@tanstack/router": "^0.0.1-beta.205",
     "axios": "^1.5.0",
     "dayjs": "^1.11.9",
     "jotai": "^2.4.0",
